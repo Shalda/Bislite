@@ -1,0 +1,43 @@
+body {
+  font: $_14px/1.2 $family;
+
+}
+.caret {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 1px;
+
+  &:before, &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 2px;
+    transform: rotate(-45deg);
+    background: #000;
+    @include anim($dur:0.3s);
+  }
+  &:after {
+    right: 0;
+    left: auto;
+    transform: rotate(45deg);
+  }
+}
+.blob{
+  display: none;
+  position: absolute;
+  background: $bghover;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 220px;
+  z-index: 10;
+  text-align: center;
+  .eye {
+    margin: 27px 22px 0;
+  }
+}

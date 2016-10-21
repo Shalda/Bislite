@@ -1,0 +1,32 @@
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 96%;
+  background: #fff;
+  padding: 10px;
+  border-bottom: 5px solid $bghover;
+  z-index: 2;
+  & li {
+    border-bottom: 2px solid #e7e7e7;
+    white-space: nowrap;
+    a{
+      display: inline-block;
+      padding: 11px 22px 10px 5px;
+      color: $colortext;
+      text-decoration: none;
+      font-size: 1.13em;
+      text-transform: none;
+
+      &:hover {
+        color: $bghover;
+      }
+    }
+  }
+  & li:last-child {
+    border-bottom: none;
+  }
+}
+.submenu li a {
+  padding: 11px 13px 10px 5px;
+}

@@ -1,0 +1,28 @@
+.dribble, .fb, .linkedin, .pinterest, .share,
+.skype, .eye, .brush, .download, .plane,
+.clients, .letter, .submit, .testcloud, .pen,
+.screen, .link, .threelines, .arrow, .slideend,
+.slidenext
+{ display: inline-block; background: url('../images/spriteicons.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.dribble { background-position: -3px -0px; width: 49px; height: 49px; }
+.fb { background-position: -3px -52px; width: 49px; height: 49px; }
+.linkedin { background-position: -3px -104px; width: 49px; height: 49px; }
+.pinterest { background-position: -3px -156px; width: 49px; height: 49px; }
+.share { background-position: -3px -208px; width: 49px; height: 49px; }
+.skype { background-position: -3px -260px; width: 49px; height: 49px; }
+.eye { background-position: -3px -312px; width: 35px; height: 25px; }
+.brush { background-position: -3px -340px; width: 29px; height: 26px; }
+.download { background-position: -3px -369px; width: 28px; height: 26px; }
+.plane { background-position: -3px -398px; width: 26px; height: 24px; }
+.clients { background-position: -3px -425px; width: 24px; height: 20px; }
+.letter { background-position: -3px -448px; width: 24px; height: 17px; }
+.submit { background-position: -3px -468px; width: 24px; height: 24px; }
+.testcloud { background-position: -3px -495px; width: 24px; height: 23px; }
+.pen { background-position: -3px -521px; width: 21px; height: 24px; }
+.screen { background-position: -27px -521px; width: 21px; height: 17px; }
+.link { background-position: -27px -541px; width: 20px; height: 26px; }
+.threelines { background-position: -32px -398px; width: 16px; height: 16px; }
+.arrow { background-position: -35px -340px; width: 14px; height: 24px; }
+.slideend { background-position: -35px -367px; width: 12px; height: 9px; }
+.slidenext { background-position: -41px -312px; width: 6px; height: 9px; }

@@ -1,0 +1,26 @@
+{
+  "name": "landing",
+  "description": "bet",
+  "main": "gulpfile.js",
+  "authors": [
+    "Shalda <zeppelin.ua@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Shalda/gulp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "swiper": "^3.4.0"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    }
+  }
+}
