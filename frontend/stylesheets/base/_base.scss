@@ -34,7 +34,8 @@ body {
   bottom: 0;
   left: 0;
   height: 50%;
-  width: 220px;
+  max-width: 220px;
+  width: 100%;
   z-index: 10;
   text-align: center;
   .eye {
