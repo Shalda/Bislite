@@ -11,47 +11,51 @@
     justify-content: space-between;
     .advantages__item {
       position: relative;
-      flex-basis: 215px;
-
-      &__logo {
+      flex: 0 0 215px;
+      .advantages__item__header {
         display: flex;
-        align-items: flex-start;
-        white-space: nowrap;
-        padding: 0 0 20px;
-        .icon-wrapper {
-          height: 40px;
-          width: 40px;
-          position: relative;
-          background-color: $bghover;
-          border-radius: 20px;
-          i {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        .advantages__item__logo {
+          display: flex;
+          align-items: flex-start;
+          white-space: nowrap;
+          padding: 0 0 20px;
+          .icon-wrapper {
+            height: 40px;
+            width: 40px;
+            position: relative;
+            background-color: $bghover;
+            border-radius: 20px;
+            i {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+          & span {
+            display: block;
+            align-self: center;
+            padding-left: 20px;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            font-weight: bold;
           }
         }
-        & span {
+        .advantages__item__text {
           display: block;
-          align-self: center;
-          padding-left: 20px;
-          text-transform: uppercase;
-          font-size: 1.3em;
-          font-weight: bold;
+          line-height: 1.75em;
+          padding: 0 0 41px 0;
         }
       }
-      &__text {
-        display: block;
-        line-height: 1.75em;
-        padding: 0 0 41px 0;
-      }
-      &__footer {
+      .advantages__item__footer {
         padding: 0 0 0 15px;
         font-size: 1.1em;
         position: relative;
-        & a {
+        a {
           color: $bghover;
           text-decoration: none;
           &:hover {
@@ -65,7 +69,7 @@
             }
           }
         }
-        .caret{
+        .caret {
           left: 0;
           right: auto;
           height: 3px;
@@ -76,7 +80,7 @@
             width: 2px;
             transform: rotate(-45deg);
             background: #000;
-            @include anim($dur:0.3s);
+            @include anim($dur: 0.3s);
           }
           &:after {
             right: auto;

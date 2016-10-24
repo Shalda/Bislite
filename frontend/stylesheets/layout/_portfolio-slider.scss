@@ -1,7 +1,7 @@
 #works-slider {
   .swiper-container {
     max-width: $maxWidth;
-    padding: 20px;
+    padding: 20px 20px 0;
     margin: 0 auto;
     .works-hr {
       height: 2px;
@@ -25,6 +25,12 @@
       padding: 11px 0 26px;
       .works-slide{
         position: relative;
+        overflow: hidden;
+        &:hover{
+          & .blob{
+            transform: translateY(0);
+          }
+        }
         img{
           max-width: 100%;
           height: auto;

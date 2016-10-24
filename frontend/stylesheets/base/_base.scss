@@ -2,6 +2,7 @@ body {
   font: $_14px/1.2 $family;
 
 }
+
 .caret {
   position: absolute;
   right: 13px;
@@ -19,7 +20,7 @@ body {
     width: 2px;
     transform: rotate(-45deg);
     background: #000;
-    @include anim($dur:0.3s);
+    @include anim($dur: 0.3s);
   }
   &:after {
     right: 0;
@@ -27,8 +28,9 @@ body {
     transform: rotate(45deg);
   }
 }
-.blob{
-  display: none;
+
+.blob {
+  display: block;
   position: absolute;
   background: $bghover;
   bottom: 0;
@@ -37,8 +39,19 @@ body {
   max-width: 220px;
   width: 100%;
   z-index: 10;
-  text-align: center;
-  .eye {
-    margin: 27px 22px 0;
+  transform: translateY(100%);
+  @include anim($param: transform, $dur:0.3s);
+   .link-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+    .link-container__wrapper {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      .eye {
+        padding: 0 30px 0 0;
+      }
+    }
   }
 }

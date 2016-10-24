@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/swiper.css">
     <link rel="stylesheet" href="./public/css/style.css">
-    <script src="./public/js/jquery.min.js"></script>
-    <script src="./public/js/swiper.js"></script>
-    <script src="./public/js/mainjs.js"></script>
+    <script src="./public/js/require.js" data-main="./public/js/main"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -74,48 +72,56 @@
     </section>
     <section id="advantages">
         <div class="advantages-container">
-            <div class="advantages__item first">
-                <div class="advantages__item__logo">
-                    <div class="icon-wrapper"><i class="pen"></i></div>
-                    <span>Clean Theme</span>
+            <div class="advantages__item">
+                <div class="advantages__item__header">
+                    <div class="advantages__item__logo">
+                        <div class="icon-wrapper"><i class="pen"></i></div>
+                        <span>Clean Theme</span>
+                    </div>
+                    <span class="advantages__item__text">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi. </span>
                 </div>
-                <span class="advantages__item__text">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi. </span>
                 <div class="advantages__item__footer">
                     <a href="#">
                         <div class="caret"></div>
                         Read More</a>
                 </div>
             </div>
-            <div class="advantages__item second">
-                <div class="advantages__item__logo">
-                    <div class="icon-wrapper"><i class="screen"></i></div>
-                    <span>Responsive Design</span>
+            <div class="advantages__item">
+                <div class="advantages__item__header">
+                    <div class="advantages__item__logo">
+                        <div class="icon-wrapper"><i class="screen"></i></div>
+                        <span>Responsive Design</span>
+                    </div>
+                    <span class="advantages__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</span>
                 </div>
-                <span class="advantages__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</span>
                 <div class="advantages__item__footer">
                     <a href="#">
                         <div class="caret"></div>
                         Read More</a>
                 </div>
             </div>
-            <div class="advantages__item third">
-                <div class="advantages__item__logo">
-                    <div class="icon-wrapper"><i class="threelines"></i></div>
-                    <span>Fully layerd PSD </span>
+            <div class="advantages__item">
+                <div class="advantages__item__header">
+                    <div class="advantages__item__logo">
+                        <div class="icon-wrapper"><i class="threelines"></i></div>
+                        <span>Fully layerd PSD </span>
+                    </div>
+                    <span class="advantages__item__text"> Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna. </span>
                 </div>
-                <span class="advantages__item__text"> Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna. </span>
                 <div class="advantages__item__footer">
                     <a href="#">
                         <div class="caret"></div>
                         Read More</a>
                 </div>
             </div>
-            <div class="advantages__item fours">
-                <div class="advantages__item__logo">
-                    <div class="icon-wrapper"><i class="plane"></i></div>
-                    <span>Ready for coding</span>
+            <div class="advantages__item">
+                <div class="advantages__item__header">
+                    <div class="advantages__item__logo">
+                        <div class="icon-wrapper"><i class="plane"></i></div>
+                        <span>Ready for coding</span>
+                    </div>
+                    <span class="advantages__item__text">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est, non placerat eros neque porta ante. Fusce quis odio urna. </span>
                 </div>
-                <span class="advantages__item__text">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est, non placerat eros neque porta ante. Fusce quis odio urna. </span>
                 <div class="advantages__item__footer">
                     <a href="#">
                         <div class="caret"></div>
@@ -135,113 +141,178 @@
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio1.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
-                    <img src="./public/images/portfolio2.jpg" alt="">
-                    <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                    <div><img src="./public/images/portfolio2.jpg" alt="">
+                        <div class="blob">
+                            <div class="link-container">
+                                <div class="link-container__wrapper">
+                                    <a href="#" class="eye"></a>
+                                    <a href="" class="link"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio3.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio4.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio5.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio6.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio7.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio8.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio9.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio10.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio11.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio12.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio13.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio14.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio15.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="works-slide swiper-slide">
                     <img src="./public/images/portfolio16.jpg" alt="">
                     <div class="blob">
-                        <a href="#" class="eye"></a>
-                        <a href="" class="link"></a>
+                        <div class="link-container">
+                            <div class="link-container__wrapper">
+                                <a href="#" class="eye"></a>
+                                <a href="" class="link"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,6 +323,41 @@
                 <div class="caret-prev"></div>
             </div>
             <hr class="works-hr">
+        </div>
+    </section>
+    <section id="community">
+        <div class="community-container">
+            <div class="test">
+                <div class="test-name">
+                    <i class="testcloud"></i>
+                    <span>Testimonials</span>
+                </div>
+                <div class="test-text">
+                    <div class="test-text__main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
+                        nulla
+                        sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo aliquam metus, sed iaculis nibh
+                        tempus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis
+                        in
+                        faucibus orci luctus et ultrices posuere cubilia Curae; Etiam nec nisi in nisl euismod
+                        fringilla.
+                    </div>
+                    <div class="test-text__author">John Travis, CEO, DomainName.com</div>
+                </div>
+            </div>
+            <div class="our-clients">
+                <div class="clients-text">
+                    <div class="clients-icon-wrapper"><i class="clients"></i></div>
+                    <span>our clients</span>
+                </div>
+                <div class="clients-box">
+                    <div class="clients-box__item"><a href=""><img src="./public/images/cox.png" alt=""></a></div>
+                    <div class="clients-box__item"><a href=""><img src="./public/images/cnn.png" alt=""></a></div>
+                    <div class="clients-box__item"><a href=""><img src="./public/images/apartment.png" alt=""></a></div>
+                    <div class="clients-box__item"><a href=""><img src="./public/images/deere.png" alt=""></a></div>
+                    <div class="clients-box__item"><a href=""><img src="./public/images/banana.png" alt=""></a></div>
+                    <div class="clients-box__item"><a href=""><img src="./public/images/fuji.png" alt=""></a></div>
+                </div>
+            </div>
         </div>
     </section>
 </div>

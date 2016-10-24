@@ -1,0 +1,43 @@
+#community {
+  .community-container {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    padding: 0  20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    .test {
+      flex-basis: 45%;
+      .test-name {
+        padding: 12px 0 20px;
+        position: relative;
+
+        i {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        span {
+          font-size: 1.3em;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 0 0 0 11px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .test-text {
+        &__main {
+          padding: 0 0 20px
+        }
+        &__author {
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+    }
+    .our-clients {
+    }
+  }
+
+}
+

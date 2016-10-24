@@ -1,17 +1,17 @@
 'use strict';
 
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS = require('gulp-clean-css'),
-    watch = require('gulp-watch'),
-    sourcemaps = require('gulp-sourcemaps'),
-    browserSync = require('browser-sync').create(),
-    mainBowerFiles = require('main-bower-files'),
-    imagemin = require('gulp-imagemin'),
-    uglify = require('gulp-uglifyjs'),
-    fontmin = require('gulp-fontmin'),
-    flatten = require('gulp-flatten');
+var gulp              = require('gulp'),
+    sass              = require('gulp-sass'),
+    autoprefixer      = require('gulp-autoprefixer'),
+    cleanCSS          = require('gulp-clean-css'),
+    watch             = require('gulp-watch'),
+    sourcemaps        = require('gulp-sourcemaps'),
+    browserSync       = require('browser-sync').create(),
+    mainBowerFiles    = require('main-bower-files'),
+    imagemin          = require('gulp-imagemin'),
+    fontmin           = require('gulp-fontmin'),
+    flatten           = require('gulp-flatten'),
+    requirejsOptimize = require('gulp-requirejs-optimize');;
 
             //sass
 gulp.task('sass', function () {
@@ -66,18 +66,16 @@ gulp.task('image:build', function () {
             .pipe(imagemin())
             .pipe(gulp.dest('./public/images'));
 });
-            //js: watch/build/uglify
+            //js: watch/build
 gulp.task('js:watch', ['js:build'], function () {
     return watch('./frontend/javascript/**/*.js', function () {
         gulp.src('./frontend/javascript/**/*.js')
-            .pipe(uglify())
             .pipe(gulp.dest('./public/js'));
     });
 });
 
 gulp.task('js:build', function () {
     gulp.src('./frontend/javascript/**/*.js')
-        .pipe(uglify())
         .pipe(gulp.dest('./public/js'));
 });
             //bower files: CSS
@@ -90,4 +88,4 @@ gulp.task('main-js', function () {
     return gulp.src(mainBowerFiles('**/*.js'))
         .pipe(gulp.dest('./public/js'));
 });
-gulp.task('default', ['browser-sync', 'sass', 'font:watch', 'image:watch', 'main-css', 'main-js', 'js:watch']);
+gulp.task('default', ['browser-sync','sass', 'font:watch', 'image:watch', 'main-css', 'main-js', 'js:watch']);
