@@ -10,8 +10,7 @@ var gulp              = require('gulp'),
     mainBowerFiles    = require('main-bower-files'),
     imagemin          = require('gulp-imagemin'),
     fontmin           = require('gulp-fontmin'),
-    flatten           = require('gulp-flatten'),
-    requirejsOptimize = require('gulp-requirejs-optimize');;
+    flatten           = require('gulp-flatten')
 
             //sass
 gulp.task('sass', function () {

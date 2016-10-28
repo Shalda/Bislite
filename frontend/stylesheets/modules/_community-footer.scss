@@ -1,0 +1,37 @@
+.community-footer {
+  padding: 29px 40px 31px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8fcfe;
+  border: 1px solid #81e4ed;
+  span {
+    flex: 0 0 610px;
+    font-size:  1.26em;
+    line-height: 1.78;
+    letter-spacing: .05em;
+  }
+  a {
+    padding: 14px 15px;
+    border: 1px solid #2aacc8;
+    border-radius: 7px;
+    background: #7de1eb;
+    box-shadow:  0 4px 3px #c9dadc,inset 0 -10px 30px -10px #2aacc8;
+    @include anim($param:opacity);
+    &:hover {
+      opacity:0.7;
+
+    }
+    span {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $colorgrtxt;
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 0 0 23px;
+    }
+  }
+
+}

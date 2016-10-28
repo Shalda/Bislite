@@ -4,6 +4,7 @@
   left: 0;
   top: 96%;
   background: #fff;
+  min-width: 172px;
   padding: 10px;
   border-bottom: 5px solid $bghover;
   z-index: 2;
@@ -26,7 +27,4 @@
   & li:last-child {
     border-bottom: none;
   }
-}
-.submenu li a {
-  padding: 11px 13px 10px 5px;
 }

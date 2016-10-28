@@ -1,6 +1,8 @@
 body {
   font: $_14px/1.2 $family;
-
+  color: $colorgrtxt;
+  margin: 0;
+  padding: 0;
 }
 
 .caret {
@@ -36,9 +38,8 @@ body {
   bottom: 0;
   left: 0;
   height: 50%;
-  max-width: 220px;
   width: 100%;
-  z-index: 10;
+
   transform: translateY(100%);
   @include anim($param: transform, $dur:0.3s);
    .link-container {

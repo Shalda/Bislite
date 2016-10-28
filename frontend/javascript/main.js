@@ -1,39 +1,47 @@
 requirejs.config({
     baseUrl: './public/js'
 });
-define(["jquery", "swiper"], function ($) {
+define(["jquery", "domReady", "isotope.pkgd.min", "swiper"], function ($, a, Isotope, b) {
 
-        //выпадающее меню
-        $('.has_children').hover(function () {
-            $(this)
-                .find('.submenu')
-                .stop()
-                .slideToggle()
-        });
+    //header menu
 
-        //первый слайдер
-        var swiper1 = new Swiper('.swiper1', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true
+    $('.has_children').hover(function () {
+        $(this)
+            .find('.submenu')
+            .stop()
+            .slideToggle()
+    });
 
-        });
+    //первый слайдер
+    var swiper1 = new Swiper('.swiper1', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
 
-        //второй слайдер
-        var swiper2 = new Swiper('.swiper2', {
-            pagination: false,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slidesPerView: 4,
-            spaceBetween: 30
-        });
+    });
 
-        //блоб на работах
-        /**8$('.works-slide').hover(function () {
-            $(this)
-                .find('.blob')
-                .stop()
-                .slideToggle('normal')
-        })*/
+    //второй слайдер
+    var swiper2 = new Swiper('.swiper2', {
+        pagination: false,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        spaceBetween: 40
+    });
+
+    var iso = new Isotope('.grid', {
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
+    $('.portfolio-nav').on('click', '.portfolio-nav li', function () {
+        var filterValue = $(this).attr('data-filter');
+        Isotope({ filter: filterValue });
+    });
+
+    $('.portfolio-nav li').click(function () {
+        $('.portfolio-nav li').removeClass('active');
+        $(this).addClass('active')
+    });
 
 
 });
+
