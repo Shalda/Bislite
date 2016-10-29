@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6qhgDZZVPDWWTyDWkDmuoKFQsS4GiJIA&signed_in=true&callback=initMap"></script>
+    <link rel="stylesheet" href="./public/css/swiper.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="./public/js/require.js" data-main="./public/js/main"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header id="header">
+        <div class="header-container">
+            <div class="header__logo"><img src="./public/images/logo.png" alt="logo"></div>
+            <nav>
+                <ul>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">home</a></li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">about us</a></li>
+                    <li class="header__nav__item has_children">
+                        <a href="#" class="header__nav__link">services</a>
+                        <div class="caret"></div>
+                        <ul class="submenu">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Wordpress Design</a></li>
+                            <li><a href="#">Mobile App Devplopment</a></li>
+                            <li><a href="#">Internet Marketing</a></li>
+                            <li><a href="#">Social Media Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav__item has_children">
+                        <a href="./portfolio.html" class="header__nav__link">portfolio</a>
+                        <div class="caret"></div>
+                        <ul class="submenu portfol-sub">
+                            <li><a href="">Latest works</a></li>
+                            <li><a href="">Our client</a></li>
+                            <li><a href="">Price</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">blog</a></li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="map"></div>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer__navigation">
+                <div class="footer__navigation__item about">
+                    <span>about us</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. </span>
+                </div>
+                <div class="footer__navigation__item explore">
+                    <span>explore</span>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer__navigation__item browse">
+                    <span>browse</span>
+                    <a href="#">Careers</a>
+                    <a href="#">Press & Media</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer__navigation__item contact">
+                    <span>contact us</span>
+                    <span><strong>BisLite Inc.</strong>Always Street 265 0X - 125 - Canada</span>
+                    <span>Phone: 987-6543-210 Fax: 987-6543-210</span>
+                </div>
+                <div class="footer__navigation__item social">
+                    <span>connect with us</span>
+                    <div class="social__box">
+                        <a href="#"><i class="fb"></i></a>
+                        <a href="#"><i class="dribble"></i></a>
+                        <a href="#"><i class="pinterest"></i></a>
+                        <a href="#"><i class="linkedin"></i></a>
+                        <a href="#"><i class="skype"></i></a>
+                        <a href="#"><i class="share"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="license">
+                    <p>© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by
+                        Brankic1979.com.</p>
+                    <p>Client Logos are copyright and trademark of the respective owners / companies.</p>
+
+                </div>
+                <a href="#" class="footer-logo"><img src="./public/images/logo.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

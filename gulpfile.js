@@ -10,7 +10,7 @@ var gulp              = require('gulp'),
     mainBowerFiles    = require('main-bower-files'),
     imagemin          = require('gulp-imagemin'),
     fontmin           = require('gulp-fontmin'),
-    flatten           = require('gulp-flatten')
+    flatten           = require('gulp-flatten');
 
             //sass
 gulp.task('sass', function () {
@@ -25,6 +25,7 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./public/css'));
+
 });
 
             //browser-sync
@@ -87,4 +88,4 @@ gulp.task('main-js', function () {
     return gulp.src(mainBowerFiles('**/*.js'))
         .pipe(gulp.dest('./public/js'));
 });
-gulp.task('default', ['browser-sync','sass', 'font:watch', 'image:watch', 'main-css', 'main-js', 'js:watch']);
+gulp.task('default', ['browser-sync', 'sass', 'font:watch', 'image:watch', 'main-css', 'main-js', 'js:watch']);

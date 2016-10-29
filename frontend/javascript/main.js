@@ -1,7 +1,21 @@
 requirejs.config({
     baseUrl: './public/js'
 });
-define(["jquery", "domReady", "isotope.pkgd.min", "swiper"], function ($, a, Isotope, b) {
+define(["jquery", "domReady", "isotope.pkgd.min", "swiper", "map"], function ($, a, Isotope) {
+
+    var iso = new Isotope('.grid', {
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
+    $('.portfolio-nav').on('click', 'li', function () {
+        var filterValue = $(this).attr('data-filter');
+        iso.arrange({ filter: filterValue });
+    });
+
+    $('.portfolio-nav li').click(function () {
+        $('.portfolio-nav li').removeClass('active');
+        $(this).addClass('active')
+    });
 
     //header menu
 
@@ -28,19 +42,7 @@ define(["jquery", "domReady", "isotope.pkgd.min", "swiper"], function ($, a, Iso
         spaceBetween: 40
     });
 
-    var iso = new Isotope('.grid', {
-        itemSelector: '.grid-item',
-        layoutMode: 'fitRows'
-    });
-    $('.portfolio-nav').on('click', '.portfolio-nav li', function () {
-        var filterValue = $(this).attr('data-filter');
-        Isotope({ filter: filterValue });
-    });
-
-    $('.portfolio-nav li').click(function () {
-        $('.portfolio-nav li').removeClass('active');
-        $(this).addClass('active')
-    });
+   
 
 
 });
